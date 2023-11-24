@@ -7,7 +7,7 @@ function Items({ links }) {
   return (
     <ul className={styles.list}>
       <li>
-        <Link href={"/"} className={styles.link}>
+        <Link href="/" className={styles.link}>
           Accueil 🏠
         </Link>
       </li>
