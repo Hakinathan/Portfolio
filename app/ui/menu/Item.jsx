@@ -1,13 +1,14 @@
 import { PropTypes } from "prop-types";
 import { usePathname } from "next/navigation";
 import styles from "./Item.module.css";
+import Link from "next/link";
 
 function Item({ link, index }) {
   const pathname = usePathname();
 
   return (
     <li key={index}>
-      <a
+      <Link
         href={link.url}
         className={`${styles.link}`}
         {...(link.target && {
@@ -16,7 +17,7 @@ function Item({ link, index }) {
         })}
       >
         {link.label}
-      </a>
+      </Link>
     </li>
   );
 }
