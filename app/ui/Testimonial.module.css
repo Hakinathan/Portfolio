@@ -1,0 +1,88 @@
+.author {
+  opacity: 0.5;
+  filter: brightness(50%);
+  transition: all 0.3s ease 0s;
+}
+
+.author::after {
+  content: "";
+  display: block;
+  width: 0;
+  background: none repeat scroll 0 0 var(--color-text-middle);
+  height: 1px;
+  transition: width 0.3s ease 0s;
+}
+
+.image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin-bottom: 1.6rem;
+}
+
+.active {
+  opacity: 1;
+  filter: brightness(100%);
+}
+
+.active::after {
+  width: 100%;
+}
+
+.name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-text-gray-dark);
+  margin-bottom: 0.8rem;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-text-title);
+  margin-bottom: 0.8rem;
+}
+
+@media (max-width: 75em) {
+  .authors {
+    gap: 4.8rem;
+  }
+}
+
+@media (max-width: 44em) {
+  .authors {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .content {
+    padding: 1.6rem;
+  }
+
+  .authors {
+    gap: 1.6rem;
+  }
+
+  .name {
+    font-size: 1.4rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .image {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .name {
+    font-size: 1.2rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+}

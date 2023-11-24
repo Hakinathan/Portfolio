@@ -1,0 +1,9 @@
+.toggle {
+  position: fixed;
+  top: 2.8rem;
+  right: 2.8rem;
+  z-index: 1;
+  border-radius: 50%;
+  background-color: var(--color-text-title);
+  color: var(--color-text-white);
+}

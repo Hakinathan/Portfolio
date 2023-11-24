@@ -1,0 +1,28 @@
+.link:link,
+.link:visited {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-text-white);
+  text-decoration: none;
+  transition: all 0.4s;
+  display: inline-block;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 0;
+  background: none repeat scroll 0 0 var(--color-text-white);
+  height: 2px;
+  transition: width 0.3s ease 0s;
+  margin-top: 0.8rem;
+}
+
+.link:hover::after,
+.link:active::after {
+  width: 100%;
+}
+
+.active::after {
+  width: 100%;
+}

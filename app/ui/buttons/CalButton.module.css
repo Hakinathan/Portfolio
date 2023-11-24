@@ -1,0 +1,28 @@
+.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-text-white);
+  transition: all 0.4s;
+  background-color: var(--color-text-title);
+  padding: 1.2rem 2.4rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  border: none;
+  position: fixed;
+  bottom: 2.4rem;
+  right: 2.4rem;
+  z-index: 1;
+  padding: 1.6rem 2.4rem;
+  animation: buttonUpAndDown 4s infinite;
+}
+
+.loading {
+  display: none;
+}
+
+@keyframes buttonUpAndDown {
+  20%,
+  80% {
+    transform: translateY(0.4rem);
+  }
+}

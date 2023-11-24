@@ -1,0 +1,53 @@
+.testimonials {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+.content {
+  border-radius: 0.8rem;
+  border: 1px solid var(--color-text-subtitle);
+  padding: 2.4rem;
+  margin-bottom: 2.4rem;
+  min-height: 20rem;
+}
+
+.icon {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+  color: var(--color-text-title);
+}
+
+.feedback {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-text-gray-dark);
+  line-height: 1.8;
+}
+
+.authors {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.8rem;
+  gap: 9.6rem;
+  padding: 0 2.4rem;
+}
+
+@media (max-width: 44em) {
+  .authors {
+    gap: 4.8rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .content {
+    padding: 1.6rem;
+    min-height: 25rem;
+  }
+}
+
+@media (max-width: 22.5em) {
+  .content {
+    min-height: 32rem;
+  }
+}
