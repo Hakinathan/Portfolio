@@ -9,7 +9,7 @@ function Items({ links }) {
       {links.map((link, index) => (
         <Item link={link} index={index} key={index} />
       ))}
-      <li className="margin-top-2">
+      <li>
         <Link href="mailto:contact.nathan.lemoine@pm.me" className={styles.btn}>
           Contactez-moi ✉
         </Link>
