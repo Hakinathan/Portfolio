@@ -6,13 +6,18 @@ import Link from "next/link";
 function Items({ links }) {
   return (
     <ul className={styles.list}>
+      <li>
+        <Link href={"/"} className={styles.link}>
+          Accueil 🏠
+        </Link>
+      </li>
       {links.map((link, index) => (
         <Item link={link} index={index} key={index} />
       ))}
       <li>
-        <Link href="mailto:contact.nathan.lemoine@pm.me" className={styles.btn}>
+        <a href="mailto:contact.nathan.lemoine@pm.me" className={styles.btn}>
           Contactez-moi ✉
-        </Link>
+        </a>
       </li>
     </ul>
   );

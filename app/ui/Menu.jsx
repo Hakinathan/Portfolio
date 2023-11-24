@@ -12,11 +12,6 @@ const loadFeatures = () =>
 
 const links = [
   {
-    label: "Accueil 🏠",
-    url: "/",
-    target: false,
-  },
-  {
     label: "À propos de moi 👨🏻‍💻",
     url: "#about",
     target: false,
