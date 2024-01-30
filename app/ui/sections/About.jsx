@@ -60,10 +60,6 @@ function About() {
             connaître. Alors j&apos;ai préféré me limiter à quelques domaines
             seulement et de les connaître le plus en profondeur que possible. 📚
           </p>
-          <p className={styles.text}>
-            Ma liste de compétences est donc la suivante : <span>React.js</span>
-            , <span>Next.js</span> et <span>Spring</span>.
-          </p>
         </div>
       </div>
     </section>
